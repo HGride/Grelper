@@ -1,0 +1,29 @@
+Fonctionnement basic :
+
+
+Grelpper fonctionne sous un bais de customisation. Partant de la, L'utilisateur vas être amener à placer les ‘widgets’ qu’il pourras customiser comme il le souhaite. L’utilisateur pourra également via une interface de création créer ses propres widgets. Pour pousser le vice au maximum, l’utilisateur aura accès à un éditeur de code et un pont d’upload afin de mettre en ligne son code. Cela devrait permettre a l’utilisateur d’utiliser son espace comme il le souhaite ainsi que d’avoir un contrôle total sur le fonctionnement interne des widget qu’il utilise.
+Les principaux widgets:
+Les principaux widget sont destiner à l’interface utilisateur par default. Ils peuvent être totalement repenser, restyle afin que l’utilisateur n’ayant pas l’envie ou le temps de customiser totalement sont environnement puisse accéder a des fonctions basiques tel que la centralisation de ses applications, l’utilisation de l'éditeur de texte avancé, ainsi que le lecteur multimédias.
+
+1 \ La centralisation des application -
+Grelpper permet centraliser toute ses application* et de les intégrer dans son environnement personnel. De ce fait, l’utilisateur a accès ses application d’un même endroit et de façon totalement synchroniser avec tout les appareil connecter au compte de l’utilisateur.
+*Seule les application correspondant a la politique de confidentialité ainsi que de sécurité pourront être ajouter a l’environnement. De plus toute les application ne sont pas éligible du fait de leurs conception a un insertion dans l’environnement de l’utilisateur. Notamment sont éligible toute les application permettant un intégration sur d’autre site web. Ainsi que toute application supportant les Iframe. Les logiciels de bureau type: suite Adobe, Logiciel de conception 3D, et autre logiciel propriétaire de bureau ne pourront pas être ajouter a l’environnement utilisateur.
+
+2 \ L’éditeur de texte avancé -
+L’éditeur de texte avancé intégrer à Grelpper permet d’utiliser toute les fonctions traditionnelle de traitement de texte ainsi que mise en forme dans un but professionnel ou scolaire ou tout autre utilisation ou un traitement de texte peut être utile. Seulement, ce n’est pas seulement une autre application de traitement de texte, c’est un éditeur de texte. Ce que cela signifie, c’est que l’on peut via cet éditeur, écrire du code dans tout les langages que demande le web, notamment, HTML, CSS, JS etc. Une coloration syntaxique ce fera en fonction du type de fichier, également a noter que des snippet pourront être enregistré par l’utilisateur pour n’importe quel actions qu’il souhaite réaliser. Cet éditeur et totalement personnalisable, de façon simple via notamment des thèmes ou encore de façon plus complexe via l’utilisation de fichier JSON contenant les différents paramètres*.
+
+3 \ Le centre de multimédia -
+Le centre multimédia, est un endroit ou l’utilisateur peut connecter ses différent compte à différents service de contenu en ligne dont notamment les plus grande plate-forme vidéo a la demande ou encore de streaming. L’utilisateur pourra également se connecter à des plate-forme de diffusion musical. 
+
+Grelpper dispose également d’un espace de partage de vidéo, audio, images sur le profile publique de l’utilisateur. Les vidéo, photo etc, postés sur Grelpper pourront être effacer totalement ainsi être mise en privé ou restreinte a un groupe d’amis.
+L’éditeur de widget :
+L’éditeur de widgets permet a l’utilisateur de Grelpper de créer ses propres widgets. L’objectif étant que l’utilisateur puisse via les différents outils de créer un widgets adapté ses besoins. De plus la communauté aura la possibilité d’ajouter au système de création de widgets de nouvelles fonctionnalités ainsi que des “template” de widgets déjà construis qu’il ne restera plus qu’a configurer.
+
+Le workshop :
+Le workshop est destiner à la communauté. Il sert de point de partage, ou tout utilisateur pourra si il le souhaite activer des environnement déjà configurer, ou encore activer pour son environnement personnel des widgets fait par d’autre. Cela dans le but que tout les utilisateurs puissent avoir un environnement personnaliser sans forcément avoir à passer du temps dans la customisation de celui-ci. Le workshop sera également un lieux ou les utilisateurs pourront si il le souhaite trouver des application déjà intégré par l’équipe de Grelpper de façon à ce que l’intégration soit fluide et que l’utilisateur n’est pas à intégrer lui même l’application.
+
+Le forum :
+Le forum sert à la communauté a échanger sur tout les sujets qui concernent Grelpper. Cela peut être, à propos de la création de widgets, l’utilisation générale de Grelpper ou tous ce qui concerne Grelpper. A noter que l’équipe de Grelpper sera active sur le forum afin de répondre a toute les questions qui peuvent être poser.
+
+L’espace contact :
+L’espace contact de Grelpper sert à la communauté de pouvoir rapidement contacter l’équipe. Ainsi l’équipe pourra répondre a des questions bien particulières.

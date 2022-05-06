@@ -1,0 +1,73 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*--------------------------*/
+$white: #FBF7F6;
+$green: #B4CB91;
+$black: #445166;
+$dark-light: #EEE5E3;
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+$font: 'Quicksand', Arial;
+
+/*---------------------------*/
+
+html{
+    font-family: $font;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#NAVBAR {
+    $left-space: 1.5rem;
+    position: fixed;
+    inset: 0 auto 0 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $left-space;
+
+    .nav-list{
+        $width: 4rem;
+        $img-size: 3rem;
+        $gap: .5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: $width;
+        border-radius: 5rem;
+        background-color: $dark-light;
+        padding: 1rem 0;
+        gap: 1rem;
+
+        img{
+            height: $img-size;
+            width: $img-size;
+        }
+    }
+
+}

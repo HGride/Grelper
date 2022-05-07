@@ -1,4 +1,3 @@
-@use "sass:meta";
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -22,6 +21,14 @@ a {
 html {
   font-family: "Quicksand", Arial; }
 
+::-moz-selection {
+  background-color: #899c6e;
+  color: #FBF7F6; }
+
+::selection {
+  background-color: #899c6e;
+  color: #FBF7F6; }
+
 body {
   min-height: 100vh;
   width: 100vw;
@@ -40,7 +47,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   #NAVBAR .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -73,7 +84,7 @@ body {
   position: absolute;
   inset: 0 6rem 6rem 6rem; }
   #HOME .left {
-    justify-self: left;
+    justify-self: center;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -96,10 +107,15 @@ body {
     #HOME .left .wrap-text {
       white-space: nowrap; }
     #HOME .left .logo-container {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
       overflow: hidden;
       height: auto;
       width: 50rem; }
       #HOME .left .logo-container .logo {
+        pointer-events: none;
         width: 50rem;
         height: auto; }
     #HOME .left .home-text {
@@ -138,7 +154,13 @@ body {
             justify-content: center;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end; }
+            align-items: flex-end;
+    padding-bottom: 3rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     #HOME .right img {
       width: 85%;
       height: auto; }
@@ -146,13 +168,11 @@ body {
 /* Nav-unit */
 #NAV_UNIT {
   position: fixed;
-  inset: auto auto 2rem auto;
+  inset: auto auto 1.5rem auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,4 +185,133 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  gap: 1rem; }
+  #NAV_UNIT .arrow {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    position: relative;
+    -webkit-transform-origin: center;
+            transform-origin: center; }
+    #NAV_UNIT .arrow svg {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
+      #NAV_UNIT .arrow svg .poly {
+        fill: #EEE5E3;
+        -webkit-transition: fill 150ms linear;
+        transition: fill 150ms linear; }
+    #NAV_UNIT .arrow.left {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    #NAV_UNIT .arrow.right {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    #NAV_UNIT .arrow:hover {
+      cursor: pointer; }
+      #NAV_UNIT .arrow:hover svg .poly {
+        fill: #B4CB91; }
+  #NAV_UNIT .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    #NAV_UNIT .slider hr {
+      display: block;
+      height: .5rem;
+      min-width: 100%;
+      background-color: #EEE5E3;
+      position: absolute;
+      z-index: 1; }
+    #NAV_UNIT .slider .points-container {
+      z-index: 2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      height: 100%;
+      gap: 3.5rem; }
+      #NAV_UNIT .slider .points-container .point {
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: #EEE5E3;
+        border-radius: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #NAV_UNIT .slider .points-container .point .point-active {
+          display: none; }
+        #NAV_UNIT .slider .points-container .point.active .point-active {
+          display: block;
+          height: 1.7rem;
+          width: 1.7rem;
+          background-color: #B4CB91;
+          border-radius: 100%;
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; }
+          #NAV_UNIT .slider .points-container .point.active .point-active::after, #NAV_UNIT .slider .points-container .point.active .point-active::before {
+            content: '';
+            display: block;
+            width: 2rem;
+            height: .25rem;
+            background-color: #B4CB91;
+            position: absolute;
+            border-radius: 1rem; }
+          #NAV_UNIT .slider .points-container .point.active .point-active::after {
+            -webkit-transform: translateX(99%);
+                    transform: translateX(99%); }
+          #NAV_UNIT .slider .points-container .point.active .point-active::before {
+            -webkit-transform: translateX(-80%);
+                    transform: translateX(-80%); }
+          #NAV_UNIT .slider .points-container .point.active .point-active.left::before {
+            display: none; }
+          #NAV_UNIT .slider .points-container .point.active .point-active.right::after {
+            display: none; }
+        #NAV_UNIT .slider .points-container .point:hover {
+          cursor: pointer; }
+          #NAV_UNIT .slider .points-container .point:hover .point-active {
+            display: block;
+            height: 1.7rem;
+            width: 1.7rem;
+            background-color: #B4CB91;
+            border-radius: 100%;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            opacity: 0;
+            -webkit-transition: opacity 150ms linear;
+            transition: opacity 150ms linear; }
+            #NAV_UNIT .slider .points-container .point:hover .point-active:hover {
+              opacity: 1; }

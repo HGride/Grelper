@@ -183,7 +183,7 @@ body {
 
     $arrows_size: 1.5;
     $points_size: 2.5;
-    @function calc-point-active-size{
+    @function calc-point-active-size($points-size) {
         $points-size-active: $points_size - 0.8;
         @return $points-size-active;
     }
@@ -252,8 +252,8 @@ body {
                 &.active{
                     .point-active{
                         display: block;
-                        height: calc-point-active-size()+rem;
-                        width: calc-point-active-size()+rem;
+                        height: calc-point-active-size($points_size)+rem;
+                        width: calc-point-active-size($points_size)+rem;
                         background-color: $green;
                         border-radius: 100%;
                         position: relative;
@@ -297,8 +297,8 @@ body {
                     cursor: pointer;
                     .point-active{
                         display: block;
-                        height: calc-point-active-size()+rem;
-                        width: calc-point-active-size()+rem;
+                        height: calc-point-active-size($points_size)+rem;
+                        width: calc-point-active-size($points_size)+rem;
                         background-color: $green;
                         border-radius: 100%;
                         position: relative;

@@ -158,18 +158,34 @@ header {
 /* MORE  */
 #MORE {
   display: flex;
+  gap: 3rem;
   grid-column: 2/4;
   grid-row: 1;
   position: relative;
+  width: calc(100vw - 9rem);
 }
 #MORE .logo-container {
   position: absolute;
   top: 2rem;
-  left: 3rem;
+  left: -4rem;
 }
 #MORE .logo-container img {
   width: 20rem;
   height: auto;
+}
+#MORE .left, #MORE .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 45%;
+}
+#MORE .left article, #MORE .right article {
+  height: 70%;
+}
+#MORE .left article img, #MORE .right article img {
+  height: 60%;
+  width: auto;
 }
 
 /* Nav-unit */

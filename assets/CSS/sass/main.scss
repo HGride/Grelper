@@ -113,7 +113,7 @@ header{
     grid-column: 1 / 4;
     grid-row: 1;
     position: relative;
-    width: calc(100vw - 6rem);
+    width: calc(100vw - 6rem );
     padding-left: 6rem;
     
 
@@ -194,16 +194,32 @@ header{
 /* MORE  */
 #MORE{
     display: flex;
+    gap: 3rem;
     grid-column: 2/ 4;
     grid-row: 1;
     position: relative;
+    width: calc(100vw - 9rem);
     .logo-container {
         position: absolute;
         top: 2rem;
-        left: 3rem;
+        left: -4rem;
         img{
             width: 20rem;
             height: auto;
+        }
+    }
+    .left, .right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 45%;
+        article{
+            height: 70%;
+            img{
+                height: 60%;
+                width: auto;
+            }
         }
     }
 }

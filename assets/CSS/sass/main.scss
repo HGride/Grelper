@@ -23,7 +23,7 @@ $dark-light: #EEE5E3;
 
 @font-face {
     font-family: "Quicksand";
-    src: url("../../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
 $font: 'Quicksand', Arial;
@@ -45,9 +45,11 @@ html{
 body {
     min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-y: hidden;
 }
-
+header{
+    z-index: 100;
+}
 #NAVBAR {
     $left-space: 1.5rem;
     position: fixed;
@@ -58,6 +60,7 @@ body {
     align-items: center;
     padding: $left-space;
     user-select: none;
+    z-index: 100;
 
     .nav-list{
         $width: 4rem;
@@ -82,20 +85,40 @@ body {
 
 }
 
+.page-wraper{
+    /*display: grid;
+    grid-template-columns:  repeat( 4, fit-content) ;
+    grid-auto-rows: min(100%, 100vh);
+    grid-gap: 1rem;
+    grid-auto-flow: row;*/
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 6rem;
+    width: auto;
+    height: auto;
+}
+
 /* HOME */
 
 #HOME {
     //Variables
     $logo-size: 50rem;
 
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    position: absolute;
-    inset: 0 6rem 6rem 6rem;
+    display: flex;
+    gap: 5rem;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    position: relative;
+    width: calc(100vw - 6rem);
+    padding-left: 6rem;
+    
 
     .left{
-        justify-self: center;
+        justify-self: left;
         align-self: center;
 
         display: flex;
@@ -156,12 +179,30 @@ body {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        padding: 3rem;
         padding-bottom: 3rem;
         pointer-events: none;
         user-select: none;
 
         img{
-            width: 85%;
+            width: auto;
+            height: 60%;
+        }
+    }
+}
+
+/* MORE  */
+#MORE{
+    display: flex;
+    grid-column: 2/ 4;
+    grid-row: 1;
+    position: relative;
+    .logo-container {
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+        img{
+            width: 20rem;
             height: auto;
         }
     }

@@ -35,6 +35,7 @@ $text-size: 2rem;
 
 html{
     font-family: $font;
+    scroll-behavior: smooth;
 }
 
 ::selection{
@@ -100,6 +101,7 @@ header{
     bottom: 6rem;
     width: auto;
     height: auto;
+    
 }
 
 /* HOME */
@@ -162,6 +164,7 @@ header{
                 height: .25rem;
                 width: 100%;
                 background-color: $green;
+                border-radius: 5rem;
             }
 
             .title {
@@ -194,6 +197,7 @@ header{
 /* MORE  */
 #MORE{
     display: flex;
+    padding-bottom: 6rem;
     gap: 3rem;
     grid-column: 2/ 4;
     grid-row: 1;
@@ -215,10 +219,30 @@ header{
         flex-direction: column;
         width: 45%;
         article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
             height: 70%;
+            color: $black;
+            hr{
+                display: block;
+                min-height: .25rem;
+                width: 100%;
+                background-color: $green;
+                border-radius: 5rem;
+            }
             img{
                 height: 60%;
                 width: auto;
+                align-self: center;
+            }
+            .article-title {
+                font-size: $title-font-size;
+            }
+            p{
+                font-size: $text-size;
             }
         }
     }

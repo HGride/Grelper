@@ -36,6 +36,9 @@ $text-size: 2rem;
 html{
     font-family: $font;
     scroll-behavior: smooth;
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 ::selection{
@@ -87,11 +90,6 @@ header{
 }
 
 .page-wraper{
-    /*display: grid;
-    grid-template-columns:  repeat( 4, fit-content) ;
-    grid-auto-rows: min(100%, 100vh);
-    grid-gap: 1rem;
-    grid-auto-flow: row;*/
     display: flex;
     flex-direction: row;
     gap: 15vw;
@@ -101,7 +99,6 @@ header{
     bottom: 6rem;
     width: auto;
     height: auto;
-    
 }
 
 /* HOME */
@@ -224,7 +221,7 @@ header{
             justify-content: center;
             align-items: flex-start;
             gap: 3rem;
-            height: 70%;
+            height: 60%;
             color: $black;
             hr{
                 display: block;
@@ -234,18 +231,35 @@ header{
                 border-radius: 5rem;
             }
             img{
-                height: 60%;
-                width: auto;
+                height: auto;
+                width: 80%;
                 align-self: center;
             }
             .article-title {
-                font-size: $title-font-size;
+                font-size: calc( $title-font-size - 1rem );
             }
             p{
-                font-size: $text-size;
+                font-size: calc( $text-size - .5rem );
             }
         }
     }
+    .right{
+        transform: translateY(-3rem);
+    }
+}
+
+/* CONTACT */
+#CONTACT {
+    display: flex;
+    padding-bottom: 6rem;
+    gap: 3rem;
+    grid-column: 3/ 4;
+    grid-row: 1;
+    position: relative;
+    width: calc(100vw - 9rem);
+    align-items: center;
+    justify-content: center;
+    
 }
 
 /* Nav-unit */

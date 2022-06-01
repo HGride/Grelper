@@ -1,0 +1,22 @@
+{
+  "name": "grelper",
+  "version": "1.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HGride/Grelper.git"
+  },
+  "author": "Gride",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HGride/Grelper/issues"
+  },
+  "homepage": "https://github.com/HGride/Grelper#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}

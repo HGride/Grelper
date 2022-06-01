@@ -9,34 +9,69 @@
 <body>
     <nav class="menu">
         <ul class="items-wraper">
-            <a href="" class="item">
-                <li><img src="" alt=""></li>
+            <a href="#HOME" class="item">
+                <li><img src="./images/home.png" alt="home"></li>
+            </a>
+            <a href="#MORE" class="item">
+                <li><img src="./images/more.png" alt="more"></li>
+            </a>
+            <a href="#CONTACT" class="item">
+                <li><img src="./images/chat.png" alt="contact"></li>
+            </a>
+            <a href="#LOGIN" class="item">
+                <li><img src="./images/users.png" alt="connection"></li>
             </a>
             <a href="" class="item">
-                <li><img src="" alt=""></li>
+                <li><img src="./images/instagrame.png" alt="instagrame logo"></li>
             </a>
             <a href="" class="item">
-                <li><img src="" alt=""></li>
+                <li><img src="./images/youtube.png" alt="youtube logo"></li>
             </a>
             <a href="" class="item">
-                <li><img src="" alt=""></li>
-            </a>
-            <a href="" class="item">
-                <li><img src="" alt=""></li>
-            </a>
-            <a href="" class="item">
-                <li><img src="" alt=""></li>
-            </a>
-            <a href="" class="item">
-                <li><img src="" alt=""></li>
+                <li><img src="./images/patreon.png" alt="patreon logo"></li>
             </a>
         </ul>
+        <div id="logo" position="large"><img src="./images/LOGO.png" alt="Grelper logo"></div>
     </nav>
     <div class="section-wraper">
-        <section class="section s1">1</section>
-        <section class="section s2">2</section>
-        <section class="section s3">3</section>
-        <section class="section s4">4</section>
+        <section class="section s1" id="HOME">
+            <div class="left">
+                <h2 class="title">Bienvenue chez Grelper !</h2>
+                <hr>
+                <p class="text">La centralisation au service de la productivité</p>
+            </div>
+            <div class="right">
+                <img src="./svg/sweat pc.svg" alt="Fille sur son bureau touchant son ordinateur avec ca main gauche.">
+            </div>
+        </section>
+        <section class="section s2" id="MORE">
+            <div class="left">
+                <h2 class="title">Grelper c'est quoi ?</h2>
+                <hr>
+                <p class="text">Grelper c'est un service web qui, constatant un manque de centralisation et synchronisation de notre travail, propose un outils au service de la centralisation ainsi que de la synchronisation tout en étant totalement personalisable.</p>
+                <img src="./svg/sync devices.svg" alt="Un homme est une femme autours d'un ordinateur d'un telephone et d'une tablette.">
+            </div>
+            <div class="right">
+                <img src="./svg/win turbine.svg" alt="Femme devant un champ d'éoliennes">
+                <h2 class="title">Une conscience écologique</h2>
+                <hr>
+                <p class="text">Chez Grelper, l'écologie c'est primordial. Nos server son autonome en énergies. Toute la stratégie de dévloppement durable de Grelper est construite autours de l'économié énergétique tout en gardant la performance des meilleurs site web.</p>
+            </div>
+        </section>
+        <section class="section s3" id="CONTACT">
+            <div class="center">
+                <form action="index.html" method="post">
+                    <h2 class="title">Contacter nous pour plus de détails</h2>
+                    <hr>
+                    <input type="text" name="name" id="name_input" placeholder="Nom" class="input">
+                    <input type="text" name="email" id="email_input" placeholder="Adresse mail"class="input">
+                    <textarea name="message" id="message_input" placeholder="Message" class="input"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+        <section class="section s4" id="LOGIN"></section>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

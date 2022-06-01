@@ -18,6 +18,39 @@ ul, ol {
 
 /* ------------------- */
 
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
 .section-wraper {
-    
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 400vw;
+    height: 100vh;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(4, 100vw);
+    .section{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .s1{
+        background-color: #f00;
+    }
+    .s2{
+        background-color: #0f0;
+    }
+    .s3{
+        background-color: #00f;
+    }
+    .s4{
+        background-color: #f0f;
+    }
 }

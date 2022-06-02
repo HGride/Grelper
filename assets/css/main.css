@@ -34,6 +34,10 @@ body {
   color: #445166;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* -------------------- */
 .section-wraper {
   position: absolute;

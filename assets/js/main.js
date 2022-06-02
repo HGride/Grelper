@@ -27,6 +27,18 @@ window.onload = function (){
 			changeLogoSize(0)
 		}
 	}, false);
+	document.querySelector("#switcher-btn-left").addEventListener('click', ()=>{
+		document.querySelector("#logger").setAttribute('state', 'reg');
+		document.querySelector(".left-btn").setAttribute('active', 'true');
+		document.querySelector(".right-btn").setAttribute('active', 'false');
+		document.querySelector("#contact-submit").innerHTML = "Inscription";
+	},false)
+	document.querySelector("#switcher-btn-right").addEventListener('click', ()=>{
+		document.querySelector("#logger").setAttribute('state', 'login');
+		document.querySelector(".left-btn").setAttribute('active', 'false');
+		document.querySelector(".right-btn").setAttribute('active', 'true');
+		document.querySelector("#contact-submit").innerHTML = "Connection";
+	})
 
 	function transformScroll(event) {
 		if (!event.deltaY) {

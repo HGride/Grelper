@@ -60,17 +60,41 @@
         </section>
         <section class="section s3" id="CONTACT">
             <div class="center">
-                <form action="index.html" method="post">
+                <form action="index.html" method="get" class="contact">
                     <h2 class="title">Contacter nous pour plus de détails</h2>
                     <hr>
-                    <input type="text" name="name" id="name_input" placeholder="Nom" class="input">
-                    <input type="text" name="email" id="email_input" placeholder="Adresse mail"class="input">
-                    <textarea name="message" id="message_input" placeholder="Message" class="input"></textarea>
+                    <input type="text" name="name" id="name_input" placeholder="Nom" class="input" required>
+                    <input type="text" name="email" id="email_input" placeholder="Adresse mail"class="input" required>
+                    <textarea name="message" id="message_input" placeholder="Message" class="input" required></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
         </section>
-        <section class="section s4" id="LOGIN"></section>
+        <section class="section s4" id="LOGIN">
+            <div class="left">
+                <form action="index.html" method="get" class="logger" id="logger" state="reg">
+                    <div class="switcher-wraper">
+                        <div class="reg switcher-btn left-btn" active="true" id="switcher-btn-left">Inscription</div>
+                        <div class="login switcher-btn right-btn" active="false" id="switcher-btn-right">Connexion</div>
+                    </div>
+                    <div class="input-wraper">
+                        <input type="text" name="name" id="name_input" class="input reg" placeholder="Nom" required>
+                        <input type="text" name="nickname" id="nickname_input" class="input reg" placeholder="Prénom" required>
+                        <input type="text" name="email" id="email_input" class="input login" placeholder="Mail" required>
+                        <input type="text" name="password" id="password_input" class="input login" placeholder="Mot de passe" required>
+                        <button type="submit" id="contact-submit">Inscription</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h2 class="title">Une précommande ?</h2>
+                <hr>
+                <p class="text">
+                    Les services de Grelper étant encore en cours de dévloppement, nous vous proposons d'accéder a une connexions préalable pour être sur d'avoir un espace dédié au moment de la sortie.
+                </p>
+                <img src="./svg/get a gift.svg" alt="Une femme et un homme autours d'un énorme cadeau avec quelque ballons qui vole.">
+            </div>
+        </section>
     </div>
     <script src="./assets/js/main.js"></script>
 </body>

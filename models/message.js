@@ -1,4 +1,3 @@
-const res = require('express/lib/response');
 const { messageModel } = require('./message.model')
 
 class Message {
@@ -12,11 +11,12 @@ class Message {
             });
 
             newRecord.save((e, data) => {
-                if(!e) res.send(data);
-                else console.log(`Error while creating ${data}: ${e}`);
+                if(e) console.log(`An error ocured while uploading ${data}: ${e}`);
             })
         }catch(e){
             throw e
         }
     }
 }
+
+module.exports = Message

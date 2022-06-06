@@ -5,6 +5,7 @@ require('./DB/db.gest.js')
 
 // Models
 const Message = require('./models/message')
+const User = require('./models/user')
 
 // Middlewear
 app.use(express.static("public"));
@@ -17,12 +18,21 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/', (req, res)=> {
-    if(req.body.message === undefined || req.body.message === "") {
-        console.log("Post error at /#CONTACT: message vide");
-    }else{
-        Message.create(req.body.message, req.body.name, req.body.email, ()=>{
-            console.log("Post succes at /#CONTACT");
-        })
+    /*Message.create(req.body.message, req.body.name, req.body.email)*/
+    if(req.body != {}){
+        switch(req.body.form){
+            case "contact":
+                if(!((req.body.message === "" || req.body.message == undefined) || (req.body.name === "" || req.body.name == undefined) || (req.body.email === "" || req.body.email == undefined))){
+                    Message.create(req.body.message, req.body.name, req.body.email);
+                }else{
+                    res.writeHead(500,"Error in form")
+                }
+                break;
+            case "logger_reg":
+
+            default:
+                break;
+        }
     }
     res.redirect('/')
 })

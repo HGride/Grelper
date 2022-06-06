@@ -65,6 +65,7 @@
                     <hr>
                     <input type="text" name="name" id="name_input" placeholder="Nom" class="input" required>
                     <input type="text" name="email" id="email_input" placeholder="Adresse mail"class="input" required>
+                    <input type="text" name="form" hidden value="contact">
                     <textarea name="message" id="message_input" placeholder="Message" class="input" required></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
@@ -78,6 +79,7 @@
                         <div class="login switcher-btn right-btn" active="false" id="switcher-btn-right">Connexion</div>
                     </div>
                     <div class="input-wraper">
+                        <input type="text" name="form" hidden value="logger_reg" id="logger-form-type">
                         <input type="text" name="name" id="name_input" class="input reg" placeholder="Nom" required>
                         <input type="text" name="nickname" id="nickname_input" class="input reg" placeholder="Prénom" required>
                         <input type="text" name="email" id="email_input" class="input login" placeholder="Mail" required>

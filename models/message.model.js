@@ -19,7 +19,8 @@ const messageModel = mongoose.model(
             type: Date,
             default: Date.now
         }
-    }
+    },
+    "messages"
 )
 
 module.exports = { messageModel }

@@ -32,12 +32,14 @@ window.onload = function (){
 		document.querySelector(".left-btn").setAttribute('active', 'true');
 		document.querySelector(".right-btn").setAttribute('active', 'false');
 		document.querySelector("#contact-submit").innerHTML = "Inscription";
+		document.querySelector('#logger-form-type').setAttribute('value', "logger_reg");
 	},false)
 	document.querySelector("#switcher-btn-right").addEventListener('click', ()=>{
 		document.querySelector("#logger").setAttribute('state', 'login');
 		document.querySelector(".left-btn").setAttribute('active', 'false');
 		document.querySelector(".right-btn").setAttribute('active', 'true');
 		document.querySelector("#contact-submit").innerHTML = "Connection";
+		document.querySelector('#logger-form-type').setAttribute('value', "logger_login");
 	})
 
 	function transformScroll(event) {
